@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx
+    tier: front-end
+spec:
+  containers:
+    - name: nginx-be
+      image: nginx
+    - name: busy-box
+      image: busybox
+      command: ["sleep", "3600"]
