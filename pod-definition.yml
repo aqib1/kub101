@@ -3,8 +3,8 @@ kind: Pod
 metadata: 
   name: testapp-pod
   labels:
-    app: testapp
-    type: back-end
+    app.kubernetes.io/name: testapp
+    app.kubernetes.io/type: back-end
 
 spec:
   containers:
